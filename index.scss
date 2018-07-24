@@ -1,0 +1,78 @@
+// @media all and (max-width: 991px) { ... }
+// @media all and (max-width: 768px) { ... }
+// @media all and (max-width: 480px) { ... }
+
+/* Global */
+@import './styles/_global.scss';
+@import './styles/_loading.scss';
+
+/* Stacked Cards */
+@import './components/StackedCards/styles/_index.scss';
+@import './components/StackedCards/styles/_switcher.scss';
+@import './components/StackedCards/styles/_cards.scss';
+@import './components/StackedCards/styles/_cards-overlay.scss';
+@import './components/StackedCards/styles/_card-item.scss';
+
+/* Detail Container */
+@import './components/DetailContainer/styles/_index.scss';
+
+/* Profile */
+@import './components/Profile/styles/_index.scss';
+
+/* Scroll */
+@import './components/Scroll/styles/_index.scss';
+
+/* Logo */
+@import './components/Logo/styles/_index.scss';
+
+/* Background */
+@import './components/Background/styles/_index.scss';
+
+/* Header */
+@import './components/Header/styles/_index.scss';
+
+/* Footer */
+@import './components/Footer/styles/_index.scss';
+
+/* Layout */
+html,
+body {
+  background-image: linear-gradient(to bottom, #eef1f6 0%, #fcfdfd 100%);
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  // position: relative;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.responsive-flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  position: relative;
+  z-index: 10;
+
+  @media all and (min-width: 768px) {
+    justify-content: center;
+  }
+}

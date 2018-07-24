@@ -1,0 +1,39 @@
+.stackedcards-overflow {
+  overflow-y: hidden !important;
+}
+
+.stackedcards.init {
+  opacity: 0; /* set the opacity to 0 if you want a fade-in effect to stacked cards on page load */
+}
+
+.stackedcards {
+  position: relative;
+}
+
+.stackedcards * {
+  user-select: none;
+}
+
+.stackedcards--animatable {
+  transition: all 400ms ease;
+}
+
+.stackedcards-origin-bottom {
+  transform-origin: bottom;
+}
+
+.stackedcards-origin-top {
+  transform-origin: left;
+}
+
+.stackedcards-bottom,
+.stackedcards-top,
+.stackedcards-none {
+  background: #fff; /* set card background background */
+  height: 100%;
+}
+
+.stackedcards .stackedcards-container > :nth-child(1) {
+  position: relative;
+  display: block;
+}

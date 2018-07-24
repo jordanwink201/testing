@@ -1,0 +1,33 @@
+// Utility Global Styles
+
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.no-transition {
+  transition: none !important;
+}
+
+// Colors
+
+$bc-blue: rgba(78, 117, 249, 1);
+$el-purple: rgba(148, 82, 201, 1);

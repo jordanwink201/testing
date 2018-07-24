@@ -1,0 +1,48 @@
+#background-elliot {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#background-bigcommerce {
+  background-repeat: repeat, no-repeat;
+  background-position: bottom right, center;
+
+  // &:before {
+  //   background-color: rgba(72, 61, 139, 1);
+  //   background-position: left top;
+  //   background-size: 174px 151px;
+  //   content: '';
+  //   display: block;
+  //   height: 100%;
+  //   left: 0;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100%;
+  //   z-index: 1;
+  // }
+
+  &:after {
+    // border-bottom-left-radius: 83% 79%;
+    // border-bottom-right-radius: 0;
+    // border-top-left-radius: 0% 50%;
+    background-color: rgba(255, 255, 255, 0.93);
+    background-repeat: no-repeat;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: bottom right;
+    transform: skewY(-34deg);
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+// skewY causes overflow
+#background-bigcommerce.flex-container {
+  overflow: hidden;
+}

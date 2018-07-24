@@ -1,0 +1,58 @@
+// Arrows
+#switcher {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  width: 40px;
+  z-index: 999;
+
+  &:hover {
+    transform: scale(1.02) translateY(-1.5px);
+  }
+}
+
+.bigcommerce-switcher {
+  border: 2px solid lighten( $bc-blue, 10% );
+  background: white;
+  opacity: 0;
+
+  &:hover {
+    background: $bc-blue;
+
+    svg {
+      fill: white;
+    }
+  }
+
+  svg {
+    fill: $bc-blue;
+  }
+}
+
+.elliot-switcher {
+  border: 2px solid lighten( $el-purple, 10% );
+  background: white;
+  opacity: 0;
+
+  &:hover {
+    background: $el-purple;
+
+    svg {
+      fill: white;
+    }
+  }
+
+  svg {
+    fill: $el-purple;
+  }
+}

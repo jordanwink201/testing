@@ -1,0 +1,58 @@
+.stackedcards .stackedcards-container > *,
+.stackedcards-overlay {
+  border-radius: 16.73px;
+  box-sizing: border-box;
+  height: 346px; /* set 100% */
+  position: absolute;
+  top: 0;
+  max-width: 272px; /* set 100% */
+  will-change: transform, opacity;
+}
+
+.stackedcards-overlay.left > div,
+.stackedcards-overlay.right > div,
+.stackedcards-overlay.top > div {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.stackedcards-overlay.left,
+.stackedcards-overlay.right,
+.stackedcards-overlay.top {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  height: 100%;
+  font-size: 24px; /* this style was added only for better preview */
+  text-transform: uppercase; /* this style was added only for better preview */
+  font-weight: 500; /* this style was added only for better preview */
+  color: #fff; /* this style was added only for better preview */
+}
+
+.stackedcards-overlay.top {
+  background: #e38568;
+}
+
+.stackedcards-overlay.right {
+  background: #7bb3c5;
+}
+
+.stackedcards-overlay.left {
+  background: #e58d93;
+}
+
+.stackedcards-overlay.left:empty,
+.stackedcards-overlay.right:empty,
+.stackedcards-overlay.top:empty {
+  display: none !important;
+}
+
+.stackedcards-overlay-hidden {
+  display: none;
+}
